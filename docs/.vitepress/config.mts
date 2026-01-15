@@ -34,7 +34,7 @@ export default defineConfig({
       
       GitChangelog({ 
         // 填写在此处填写您的仓库链接
-        repoURL: () => 'https://github.com/YOUR_NAME/YOUR_REPO', 
+        repoURL: () => 'https://github.com/asukaneko/vitepress-template', 
       }), 
       GitChangelogMarkdownSection({
         sections: {
@@ -93,7 +93,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/YOUR_NAME/YOUR_REPO' }
+      { icon: 'github', link: 'https://github.com/asukaneko/vitepress-template' }
     ],
 
     search: {
@@ -104,7 +104,7 @@ export default defineConfig({
       copyright: 'Copyright © 2024-present'
     },
     editLink: {
-      pattern: 'https://github.com/YOUR_NAME/YOUR_REPO',
+      pattern: 'https://github.com/asukaneko/vitepress-template',
       text: '在GitHub上编辑此页'
     }
   },

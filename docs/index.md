@@ -11,7 +11,7 @@ hero:
       link: /guide/introduction
     - theme: alt
       text: 在 GitHub 上查看
-      link: https://github.com/YOUR_NAME/YOUR_REPO
+      link: https://github.com/asukaneko/vitepress-template
 
 features:
   - title: 插件增强
