@@ -124,22 +124,7 @@ export default defineConfig({
     },
     // 组件插入h1标题下
     config(md) {
-      // 创建 markdown-it 插件
-      md.use((md) => {
-        const defaultRender = md.render
-        md.render = function (...args) {
-          const [content, env] = args
-          const isHomePage = env.path === '/' || env.relativePath === 'index.md'  // 判断是否是首页
-
-          if (isHomePage) {
-            return defaultRender.apply(md, args) // 如果是首页，直接渲染内容
-          }
-          // 在每个 md 文件内容的开头插入组件
-          const defaultContent = defaultRender.apply(md, args)
-          const component = '<ArticleMetadata />\n'
-          return component + defaultContent
-        }
-      })
+      // 如果有其他的 markdown-it 插件配置可以在这里添加
     }
   },
   lastUpdated: true

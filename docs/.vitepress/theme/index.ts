@@ -4,7 +4,6 @@ import './styles/index.css'
 import myLayout from './components/mylayout.vue'
 import Linkcard from "./components/Linkcard.vue"
 import confetti from "./components/confetti.vue"
-import ArticleMetadata from "./components/ArticleMetadata.vue"
 import giscusTalk from 'vitepress-plugin-comment-with-giscus';
 import { useData, useRoute } from 'vitepress';
 import mediumZoom from 'medium-zoom';
@@ -105,7 +104,6 @@ export default {
     // 注册全局组件
     app.component('Linkcard' , Linkcard)
     app.component('confetti' , confetti)
-    app.component('ArticleMetadata' , ArticleMetadata)
     
     if (typeof document !== 'undefined')  {
       NProgress.configure({ showSpinner: false })
