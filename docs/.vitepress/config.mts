@@ -49,7 +49,7 @@ export default defineConfig({
   title: "VitePress 模板项目",
   description: "基于 VitePress 的通用文档模板",
   lang: 'zh-CN',
-  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
+  head: [['link', { rel: 'icon', href: '/favicon.svg' }]],
   themeConfig: {
     docFooter: { 
       prev: '上一页', 
@@ -66,7 +66,7 @@ export default defineConfig({
         timeStyle: 'medium' // 可选值full、long、medium、short
       },
     },
-    logo:'',
+    logo:'/vitepress-logo-large.svg',
     nav: [
       { text: '主页', link: '/' },
       { text: '使用指南', link: '/guide/' }

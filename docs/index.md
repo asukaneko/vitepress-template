@@ -5,6 +5,9 @@ hero:
   name: "VitePress 模板"
   text: "快速构建您的专业文档站点"
   tagline: "内置 Nolebase 插件增强，开箱即用"
+  image:
+    src: /vitepress-logo-large.svg
+    alt: VitePress 模板 logo
   actions:
     - theme: brand
       text: 开始使用
