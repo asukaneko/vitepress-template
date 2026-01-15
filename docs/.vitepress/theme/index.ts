@@ -122,10 +122,10 @@ export default {
         
     // giscus配置
     giscusTalk({
-      repo: 'asukaneko/vitepress', //仓库
-      repoId: 'R_kgDOPrMWKg', //仓库ID
+      repo: 'xxxxxxxxxxxxxxxxxx', //仓库
+      repoId: 'xxxxxxxxxxxxxxxx', //仓库ID
       category: 'General', // 讨论分类
-      categoryId: 'DIC_kwDOPrMWKs4CvFPT', //讨论分类ID
+      categoryId: 'xxxxxxxxxxxxxxxxxxx', //讨论分类ID
       mapping: 'pathname',
       inputPosition: 'bottom',
       lang: 'zh-CN',
