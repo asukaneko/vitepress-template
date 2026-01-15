@@ -14,6 +14,27 @@
   --vp-button-brand-active-border: #F6CEEC;
   --vp-badge-tip-border: transparent;
   
+  /* 文本选中效果 */
+  --vp-c-selection-bg: #ce9ffc6e;
+}
+
+/* 全局文本选中样式 */
+::selection {
+  background-color: var(--vp-c-selection-bg);
+}
+
+/* 标题选中高亮效果（配合 highlight-targeted-heading 插件） */
+.vp-doc h1:target,
+.vp-doc h2:target,
+.vp-doc h3:target,
+.vp-doc h4:target,
+.vp-doc h5:target,
+.vp-doc h6:target {
+  background: linear-gradient(90deg, #ce9ffc3d 0%, transparent 100%);
+  padding-left: 10px;
+  margin-left: -10px;
+  border-left: 4px solid var(--vp-c-brand-1);
+  transition: all 0.5s ease;
 }
 
 .dark {

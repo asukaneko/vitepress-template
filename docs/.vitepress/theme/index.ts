@@ -28,7 +28,7 @@ import {
 import '@nolebase/vitepress-plugin-highlight-targeted-heading/client/style.css'
 import { NProgress } from 'nprogress-v2/dist/index.js' // 进度条组件
 import 'nprogress-v2/dist/index.css' // 进度条样式
-import { NolebasePagePropertiesPlugin } from '@nolebase/vitepress-plugin-page-properties'
+import { NolebasePagePropertiesPlugin } from '@nolebase/vitepress-plugin-page-properties/client'
 import '@nolebase/vitepress-plugin-page-properties/client/style.css'
 import darkchangeLayout from './components/darkchangeLayout.vue'
 
@@ -105,7 +105,7 @@ export default {
     // 注册全局组件
     app.component('Linkcard' , Linkcard)
     app.component('confetti' , confetti)
-    //app.component('ArticleMetadata' , ArticleMetadata) 已有替代
+    app.component('ArticleMetadata' , ArticleMetadata)
     
     if (typeof document !== 'undefined')  {
       NProgress.configure({ showSpinner: false })
